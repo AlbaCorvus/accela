@@ -5,6 +5,8 @@ Setup
 Import project from github using IDE of your choice run maven configuration base directory ${project_loc:assessment} Goals clean compile assembly:single use JUnit 4 dependency
 In your target folder for the project workspace example C:\workspace\accela\assessment\target open a shell command and run the following
 
+Or given that I have pushed the target folder you can just import the project and run the following from the target folder without building the project again.
+
 java -cp assessment-0.0.1-SNAPSHOT-jar-with-dependencies.jar org.h2.tools.Console
 
 This will open your browser window and launch the H2DB ~test database your credentials will be username "sa" and password "" by default please don not change these as applications persistence.xml refers to these credentials for DB connection.
