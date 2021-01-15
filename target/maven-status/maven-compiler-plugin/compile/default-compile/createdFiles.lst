@@ -1,0 +1,11 @@
+com\cjmulcahy\accela\assessment\domain\Address.class
+com\cjmulcahy\accela\assessment\App.class
+com\cjmulcahy\accela\assessment\configuration\ApplicationTestConfiguration.class
+com\cjmulcahy\accela\assessment\configuration\AssessmentConfiguration.class
+com\cjmulcahy\accela\assessment\dao\PersonDAO.class
+com\cjmulcahy\accela\assessment\domain\Person.class
+com\cjmulcahy\accela\assessment\ConsoleUI.class
+com\cjmulcahy\accela\assessment\service\PersonServiceImpl.class
+com\cjmulcahy\accela\assessment\dao\PersonDAOImpl.class
+com\cjmulcahy\accela\assessment\service\PersonService.class
+com\cjmulcahy\accela\assessment\dao\PersonTestDAOImpl.class
