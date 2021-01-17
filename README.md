@@ -24,5 +24,7 @@ org.h2
 Java JRE 8 >
 
 Work Notes
-There is no validation on the input console menu at all :(
-Please choose from the numeric options given by the console menus.
+
+Addresses functionality limited as time constraints played a role, can edit addresses under update person option [2]
+Can delete addresses by proxy through option [3] delete person.
+Can add multiple addresses to person when creating in option [1]
