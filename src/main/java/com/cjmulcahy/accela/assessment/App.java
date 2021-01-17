@@ -1,7 +1,5 @@
 package com.cjmulcahy.accela.assessment;
 
-import java.util.Scanner;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.cjmulcahy.accela.assessment.configuration.AssessmentConfiguration;
@@ -10,8 +8,10 @@ public class App {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AssessmentConfiguration.class);
-        ConsoleUI console = applicationContext.getBean(ConsoleUI.class);
-        try (Scanner scanner = new Scanner(System.in)) {
+        ConsoleUI consoleUi = applicationContext.getBean(ConsoleUI.class);
+        consoleUi.startConsole();
+        applicationContext.close();
+        /*try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
 
                 console.showConsoleMenu();
@@ -36,6 +36,6 @@ public class App {
                     break;
                 }
             }
-        }
+        }*/
     }
 }

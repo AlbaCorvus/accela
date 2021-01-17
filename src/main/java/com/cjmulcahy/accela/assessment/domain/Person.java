@@ -1,6 +1,7 @@
 package com.cjmulcahy.accela.assessment.domain;
 
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -10,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.cjmulcahy.accela.assessment.utils.CollectionUtils;
 
 
 @Entity
@@ -56,6 +59,10 @@ public class Person {
 
     public void setAddresses(Collection<Address> addresses) {
         this.addresses = addresses;
+    }
+    
+    public Address getAddressById(int id){
+        return getAddresses().stream().filter(address -> address.getId() == id).collect(CollectionUtils.toSingleton());
     }
     
 }
